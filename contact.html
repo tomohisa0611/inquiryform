@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+    <div class="page">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1 class="header__logo">FashionablyLate</h1>
+        </header>
+
+        <!-- お問い合わせフォーム -->
+        <main class="form">
+            <h2 class="form__title">Contact</h2>
+            <form class="form__body" action="confirm.html" method="post">
+                <!-- お名前 -->
+                <div class="form__group">
+                    <label class="form__label" for="name">お名前<span class="form__required">※</span></label>
+                    <input class="form__input" type="text" id="name" name="name" placeholder="例: 山田 太郎" />
+                </div>
+
+                <!-- 性別 -->
+                <div class="form__group">
+                    <label class="form__label">性別<span class="form__required">※</span></label>
+                    <div class="form__radio-group">
+                        <label><input class="form__radio" type="radio" name="gender" value="男性" /> 男性</label>
+                        <label><input class="form__radio" type="radio" name="gender" value="女性" /> 女性</label>
+                        <label><input class="form__radio" type="radio" name="gender" value="その他" /> その他</label>
+                    </div>
+                </div>
+
+                <!-- メールアドレス -->
+                <div class="form__group">
+                    <label class="form__label" for="email">メールアドレス<span class="form__required">※</span></label>
+                    <input class="form__input" type="email" id="email" name="email" placeholder="例: test@example.com" />
+                </div>
+
+                <!-- 電話番号 -->
+                <div class="form__group">
+                    <label class="form__label" for="tel">電話番号<span class="form__required">※</span></label>
+                    <input class="form__input" type="tel" id="tel" name="tel" placeholder="例: 080-1234-5678" />
+                </div>
+
+                <!-- 住所 -->
+                <div class="form__group">
+                    <label class="form__label" for="address">住所<span class="form__required">※</span></label>
+                    <input class="form__input" type="text" id="address" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3" />
+                </div>
+
+                <!-- 建物名 -->
+                <div class="form__group">
+                    <label class="form__label" for="building">建物名</label>
+                    <input class="form__input" type="text" id="building" name="building" placeholder="例: 千駄ヶ谷マンション101" />
+                </div>
+
+                <!-- お問い合わせの種類 -->
+                <div class="form__group">
+                    <label class="form__label" for="category">お問い合わせの種類<span class="form__required">※</span></label>
+                    <select class="form__select" id="category" name="category">
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="商品の配送について">商品の配送について</option>
+                        <option value="商品の交換について">商品の交換について</option>
+                        <option value="商品トラブル">商品トラブル</option>
+                        <option value="ショップへのお問い合わせ">ショップへのお問い合わせ</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+
+                <!-- お問い合わせ内容 -->
+                <div class="form__group">
+                    <label class="form__label" for="details">お問い合わせ内容<span class="form__required">※</span></label>
+                    <textarea class="form__textarea" id="details" name="details" placeholder="お問い合わせ内容をご記載ください"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="form__group">
+                    <button class="form__button" type="submit">確認画面</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

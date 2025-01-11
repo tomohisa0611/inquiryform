@@ -1,0 +1,58 @@
+/* 全体のスタイル */
+body.thankyou {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f3ef;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 背景のThank you文字 */
+.thankyou__background::before {
+    content: "Thank you";
+    font-size: 100px;
+    color: rgba(139, 94, 52, 0.1);
+    /* 薄いブラウンカラー */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* コンテンツ全体 */
+.thankyou__content {
+    z-index: 2;
+    /* 背景文字より前に表示 */
+    text-align: center;
+}
+
+/* メッセージ */
+.thankyou__message {
+    font-size: 20px;
+    color: #75695c;
+    margin-bottom: 20px;
+}
+
+/* HOMEボタン */
+.thankyou__button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #75695c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.thankyou__button:hover {
+    background-color: #75695c;
+}

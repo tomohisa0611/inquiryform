@@ -1,0 +1,134 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3ef;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__logo {
+    font-size: 24px;
+    color: #75695c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header__logout {
+    color: #75695c;
+    text-decoration: none;
+    border: 1px solid #75695c;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.header__logout:hover {
+    background-color: #75695c;
+    color: white;
+}
+
+/* 管理画面タイトル */
+.admin__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #75695c;
+    text-align: center;
+}
+
+/* フィルター */
+.admin__filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.admin__search {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.admin__select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.admin__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.admin__button--search {
+    background-color: #75695c;
+    color: white;
+}
+
+.admin__button--reset {
+    background-color: #ccc;
+    color: black;
+}
+
+.admin__button--search:hover {
+    background-color: #75695c;
+}
+
+.admin__button--reset:hover {
+    background-color: #aaa;
+}
+
+/* テーブル */
+.admin__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.admin__table-header {
+    background-color: #75695c;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin__table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin__table-data {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.admin__button--details {
+    background-color: #75695c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admin__button--details:hover {
+    background-color: #75695c;
+}

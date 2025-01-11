@@ -1,0 +1,92 @@
+/* 全体 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3ef;
+}
+
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+.header__logo {
+    font-size: 24px;
+    color: #75695c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* フォーム全体 */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form__title {
+    font-size: 20px;
+    text-align: center;
+    color: #75695c;
+    margin-bottom: 20px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+.form__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form__required {
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form__radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form__radio {
+    margin-right: 5px;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #75695c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #75695c;
+}

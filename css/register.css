@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3ef;
+}
+
+.page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__logo {
+    font-size: 24px;
+    color: #75695c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-item {
+    display: inline;
+}
+
+.header__nav-link {
+    color: #75695c;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #75695c;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.header__nav-link:hover {
+    background-color: #75695c;
+    color: #fff;
+}
+
+/* フォーム */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #75695c;
+    text-align: center;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form__input::placeholder {
+    color: #aaa;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #75695c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #75695c;
+}
